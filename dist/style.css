@@ -1,0 +1,57 @@
+html, body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 48px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #app, .wrapper, .laps {
+    height: 100%;
+}
+
+button {
+    background-color: transparent;
+    margin: 0.5em;
+    border: none;
+    padding: 0.25em 0.5em;
+    font-size: inherit;
+    transition: all 0.1s ease-out;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+button:disabled {
+    opacity: 0.2;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.timer {
+    font-size: 144px;
+    text-align: left;
+}
+.timer.small {
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.main {
+    flex-basis: 17rem;
+    flex-grow: 1;
+}
+
+.laps {
+    overflow: auto;
+    flex-basis: 6rem;
+    flex-shrink: 0;
+    padding-left: 3rem;
+}
