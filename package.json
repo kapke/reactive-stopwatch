@@ -1,0 +1,49 @@
+{
+  "name": "reactive-stopwatch",
+  "version": "1.0.0",
+  "description": "Example stopwatch written with pure JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base ./app --port 8080",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapke/reactive-stopwatch.git"
+  },
+  "keywords": [
+    "rx",
+    "reactive",
+    "stopwatch"
+  ],
+  "author": "Andrzej Kopeć <andrzej.kopec@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kapke/reactive-stopwatch/issues"
+  },
+  "homepage": "https://github.com/kapke/reactive-stopwatch#readme",
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "rxjs": "^5.4.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.1.1",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      ["transform-class-properties", { "spec": true }]
+    ]
+  }
+}
